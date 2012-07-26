@@ -1,12 +1,12 @@
 
 class StlTimeCode
-  attr_reader :hours, :minutes, :seconds, :milliseconds
+  attr_reader :hours, :minutes, :seconds, :frames
   
-  def initialize(hours, minutes, seconds, milliseconds)
+  def initialize(hours, minutes, seconds, frames)
     @hours = hours.to_i
     @minutes = minutes.to_i
     @seconds = seconds.to_i
-    @milliseconds = milliseconds.to_i
+    @frames = frames.to_i
   end
 end
 

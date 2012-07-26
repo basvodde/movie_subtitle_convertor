@@ -29,14 +29,14 @@ describe "Reading the DVD Studio Pro STL format" do
       subject.subtitles[0].start.hours.should == 0
       subject.subtitles[0].start.minutes.should == 0
       subject.subtitles[0].start.seconds.should == 3
-      subject.subtitles[0].start.milliseconds.should == 15
+      subject.subtitles[0].start.frames.should == 15
     end
     
     it "Should be able to parse end end entry fields" do
       subject.subtitles[0].end.hours.should == 0
       subject.subtitles[0].end.minutes.should == 0
       subject.subtitles[0].end.seconds.should == 5
-      subject.subtitles[0].end.milliseconds.should == 26      
+      subject.subtitles[0].end.frames.should == 26      
     end
     
     it "Should be able to parse the text field in the entry" do
